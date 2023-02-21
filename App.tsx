@@ -1,6 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import { Dashboard } from './src/Screens/Dashboard';
+import { ThemeProvider } from 'styled-components';
+
+import theme from './src/global/styles/theme';
+import { Dashboard } from './src/Screens/Dasboard';
 
 export default function App() {
-  return <Dashboard />
+  return(
+    <ThemeProvider theme={theme}>
+      <Dashboard />
+    </ThemeProvider>
+  )
 }
