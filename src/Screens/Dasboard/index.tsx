@@ -1,6 +1,7 @@
 import React from "react";
+import { HighlightCard } from "../../HighlightCard";
 
-import { Switch } from "react-native";
+
 
 import {
     Container,
@@ -11,7 +12,8 @@ import {
     User,
     UserGreetings,
     UserName,
-    IconLogout
+    IconLogout,
+    SwitchButton
 } from "./styles";
 
 export function Dashboard() {
@@ -27,10 +29,12 @@ export function Dashboard() {
                         </User>
                     </UserInfo>
                     <IconLogout name="log-out" />
-                    <Switch />
+                    <SwitchButton />
                 </UserWrapper>
 
             </Header>
+
+            <HighlightCard />
 
         </Container>
     );

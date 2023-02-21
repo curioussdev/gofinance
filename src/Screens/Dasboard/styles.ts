@@ -1,5 +1,6 @@
 import styled from "styled-components/native";
 import { Feather } from '@expo/vector-icons'; // Icon de logout da lib Feather
+import { Switch } from "react-native"; // switch button
 import { 
     RFPercentage,
      RFValue
@@ -19,7 +20,7 @@ export const Header = styled.View`
     height: ${RFPercentage(42)}px;
     justify-content: center;
     align-items: center;
-    	
+    
 `;
 
 export const UserWrapper = styled.View`
@@ -27,8 +28,8 @@ export const UserWrapper = styled.View`
     padding: 0 24px;
 
     flex-direction:  row;
+    
     justify-content: space-between;
-
     align-items: center;
 `;
 
@@ -64,4 +65,10 @@ export const UserName = styled.Text`
 export const IconLogout = styled(Feather)`
     color: ${({ theme }) => theme.colors.shape};
     font-size: ${RFValue(24)}px;
+    
+   
+`;
+
+export const SwitchButton = styled(Switch)`
+   
 `;
