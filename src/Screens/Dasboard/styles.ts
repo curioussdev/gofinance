@@ -72,3 +72,5 @@ export const IconLogout = styled(Feather)`
 export const SwitchButton = styled(Switch)`
    
 `;
+
+export const HighlightCards = styled.ScrollView``;
