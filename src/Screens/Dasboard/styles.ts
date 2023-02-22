@@ -1,9 +1,9 @@
 import styled from "styled-components/native";
 import { Feather } from '@expo/vector-icons'; // Icon de logout da lib Feather
 import { Switch } from "react-native"; // switch button
-import { 
+import {
     RFPercentage,
-     RFValue
+    RFValue
 } from 'react-native-responsive-fontsize'  // Traz a independencia de px em proporção as telas de diferentes dispositivos
 
 export const Container = styled.View`
@@ -50,13 +50,13 @@ export const User = styled.View`
 `;
 
 export const UserGreetings = styled.Text`
-    color: ${( { theme } ) => theme.colors.shape};
+    color: ${({ theme }) => theme.colors.shape};
     font-size: ${RFValue(18)}px;
     font-family: ${({ theme }) => theme.fonts.regular};
 `;
 
 export const UserName = styled.Text`
-    color: ${({theme}) => theme.colors.shape};
+    color: ${({ theme }) => theme.colors.shape};
     font-size: ${RFValue(18)}px;
     font-family: ${({ theme }) => theme.fonts.bold};
 
@@ -73,4 +73,8 @@ export const SwitchButton = styled(Switch)`
    
 `;
 
-export const HighlightCards = styled.ScrollView``;
+export const HighlightCards = styled.ScrollView.attrs({
+    horizontal: true,
+    showsHorizontalScrollIndicator: false,
+    contentContainerStyle: { paddingHorizontal: 24 } // adicinar estilização dentro da listagem
+})``;
