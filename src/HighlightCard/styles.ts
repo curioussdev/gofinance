@@ -3,7 +3,7 @@ import { RFValue } from 'react-native-responsive-fontsize';
 import { Feather } from '@expo/vector-icons';
 
 export const Container = styled.View`
-    background-color: ${({ theme }) => theme.colors.secondary};
+    background-color: ${({ theme }) => theme.colors.shape };
 
     width: ${RFValue(300)}px;
     border-radius: 10px;
@@ -13,6 +13,8 @@ export const Container = styled.View`
     margin-right: 20px;
 
     height: 200px;
+
+    
 `;
 
 export const Header = styled.View`

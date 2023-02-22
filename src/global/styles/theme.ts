@@ -17,6 +17,8 @@ export default {
         text_dark: '#000',
 
         background: '#F0F2F5',
+
+       
     },
 
     fonts: {

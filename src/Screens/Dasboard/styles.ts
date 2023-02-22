@@ -79,4 +79,16 @@ export const HighlightCards = styled.ScrollView.attrs({
     horizontal: true,
     showsHorizontalScrollIndicator: false,
     contentContainerStyle: { paddingHorizontal: 24 } // adicinar estilização dentro da listagem
-})``;
+})`
+    width: 100%;
+
+    position: absolute;
+
+    margin-top: ${RFPercentage(20)}px;
+
+    
+`;
+
+const boxShadow = styled.View`
+    
+`;
