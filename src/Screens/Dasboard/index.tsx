@@ -1,6 +1,7 @@
 import React from "react";
-import { HighlightCard } from "../../HighlightCard";
 
+import { HighlightCard } from "../../components/HighlightCard";
+import { TransactionCard } from "../../components/TransactionCards";
 
 
 import {
@@ -14,8 +15,9 @@ import {
     UserName,
     IconLogout,
     SwitchButton,
-    HighlightCards
-
+    HighlightCards,
+    Transactions,
+    Title,
 } from "./styles";
 
 export function Dashboard() {
@@ -37,6 +39,12 @@ export function Dashboard() {
             </Header>
 
             <HighlightCards>
+            <HighlightCard 
+                    type="total"
+                    title="Total" 
+                    amount="65,000.00 kz" 
+                    lastTransaction="01 a 15 de Abril"
+                />
                 <HighlightCard 
                     type="up"
                     title="Entradas" 
@@ -49,14 +57,15 @@ export function Dashboard() {
                     amount="1,000.00 kz" 
                     lastTransaction="Última saída, dia 13 de Abril"
                 />
-                <HighlightCard 
-                    type="total"
-                    title="Total" 
-                    amount="65,000.00 kz" 
-                    lastTransaction="01 a 15 de Abril"
-                />
+                
                 
             </HighlightCards>
+
+            <Transactions>
+                <Title>Listagem</Title>
+
+                <TransactionCard />
+            </Transactions>
 
         </Container>
     );
