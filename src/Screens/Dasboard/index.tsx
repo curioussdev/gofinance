@@ -26,7 +26,8 @@ import {
 export function Dashboard() {
     const data = [
         {
-        title: "Compra de PC",
+        type: 'positive',
+        title: "Venda de Casa",
         amount: "15.000,00 KZ",
         category: {
             name: "Vendas",
@@ -35,7 +36,18 @@ export function Dashboard() {
         date: "12/03/2023"
     },
     {
+        type: 'negative',
         title: "Compra de PC",
+        amount: " - 25.000,00 KZ",
+        category: {
+            name: "Vendas",
+            icon: 'dollar-sign',
+    },
+        date: "12/03/2023"
+    },
+    {
+        type: 'positive',
+        title: "Vendi meu Carro",
         amount: "15.000,00 KZ",
         category: {
             name: "Vendas",
@@ -44,19 +56,11 @@ export function Dashboard() {
         date: "12/03/2023"
     },
     {
-        title: "Compra de PC",
-        amount: "15.000,00 KZ",
+        type: 'negative',
+        title: "Aluguel do apartamento",
+        amount: " - 89.000,00 KZ",
         category: {
-            name: "Vendas",
-            icon: 'dollar-sign',
-    },
-        date: "12/03/2023"
-    },
-    {
-        title: "Compra de PC",
-        amount: "15.000,00 KZ",
-        category: {
-            name: "Vendas",
+            name: "Casa",
             icon: 'dollar-sign',
     },
         date: "12/03/2023"
