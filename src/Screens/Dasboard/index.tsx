@@ -22,7 +22,6 @@ import {
 } from "./styles";
 
 
-
 export function Dashboard() {
     const data = [
         {
@@ -38,7 +37,7 @@ export function Dashboard() {
     {
         type: 'negative',
         title: "Compra de PC",
-        amount: " - 25.000,00 KZ",
+        amount: "25.000,00 KZ",
         category: {
             name: "Vendas",
             icon: 'dollar-sign',
@@ -47,21 +46,21 @@ export function Dashboard() {
     },
     {
         type: 'positive',
-        title: "Vendi meu Carro",
+        title: "Alimentação",
         amount: "15.000,00 KZ",
         category: {
             name: "Vendas",
-            icon: 'dollar-sign',
+            icon: 'coffee',
     },
         date: "12/03/2023"
     },
     {
         type: 'negative',
         title: "Aluguel do apartamento",
-        amount: " - 89.000,00 KZ",
+        amount: "89.000,00 KZ",
         category: {
             name: "Casa",
-            icon: 'dollar-sign',
+            icon: 'home',
     },
         date: "12/03/2023"
     }
@@ -117,7 +116,7 @@ return (
                 showsVerticalScrollIndicator={false}
                 
             />
-`
+
             
         </Transactions>
 
