@@ -19,7 +19,7 @@ export const Container = styled.View<TypeProps>`
 
     margin-right: 20px;
 
-    height: 200px;
+    height: ${RFValue(180)}px;
 
     
 `;
