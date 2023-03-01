@@ -1,4 +1,5 @@
 import styled from "styled-components/native";
+import { FlatList } from 'react-native'
 import { Feather } from '@expo/vector-icons'; // Icon de logout da lib Feather
 import { Switch } from "react-native"; // switch button
 import {
@@ -17,8 +18,6 @@ export const Container = styled.View`
     flex: 1;
     
     background-color: ${({ theme }) => theme.colors.background};
-
-    
 `;
 
 export const Header = styled.View`
@@ -110,6 +109,8 @@ export const Title = styled.Text`
     margin-bottom: 16px;
 `;
 
-export const TransactionList = styled.FlatList`
+export const TransactionList = styled(FlatList as new () => FlatList<DataListProps>).attrs({
+    showsVerticalScrollIndicator: false
+})`
 
 `;
