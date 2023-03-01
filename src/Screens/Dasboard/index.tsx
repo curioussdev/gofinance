@@ -1,7 +1,7 @@
 import React from "react";
 
 import { HighlightCard } from "../../components/HighlightCard";
-import { TransactionCard } from "../../components/TransactionCards";
+import { TransactionCard, TransactionCardProps } from "../../components/TransactionCards";
 
 
 import {
@@ -21,10 +21,15 @@ import {
     TransactionList
 } from "./styles";
 
+export interface DataListProps extends TransactionCardProps {
+    id: string;
+}
 
 export function Dashboard() {
+    
     const data = [
         {
+        id: "1",
         type: 'positive',
         title: "Venda de Casa",
         amount: "15.000,00 KZ",
@@ -35,16 +40,18 @@ export function Dashboard() {
         date: "12/03/2023"
     },
     {
+        id: "2",
         type: 'negative',
         title: "Compra de PC",
         amount: "25.000,00 KZ",
         category: {
             name: "Vendas",
-            icon: 'dollar-sign',
+            icon: 'cpu',
     },
         date: "12/03/2023"
     },
     {
+        id: "3",
         type: 'positive',
         title: "Alimentação",
         amount: "15.000,00 KZ",
@@ -55,6 +62,7 @@ export function Dashboard() {
         date: "12/03/2023"
     },
     {
+        id: "4",
         type: 'negative',
         title: "Aluguel do apartamento",
         amount: "89.000,00 KZ",
@@ -111,6 +119,7 @@ return (
 
 
             <TransactionList
+                keyExtractor={item => item }
                 data={data}
                 renderItem={({ item }) =>  <TransactionCard data={item} /> }
                 showsVerticalScrollIndicator={false}

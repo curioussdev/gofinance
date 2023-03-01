@@ -6,6 +6,8 @@ import {
     RFValue
 } from 'react-native-responsive-fontsize'  // Traz a independencia de px em proporção as telas de diferentes dispositivos
 
+import { DataListProps } from '.'
+
 interface TransactionProps  {
     type: 'positive' | 'negative'
 }
