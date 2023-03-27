@@ -111,6 +111,14 @@ return (
                 lastTransaction="Última saída, dia 13 de Abril"
             />
 
+                <HighlightCard
+
+                type="up"
+                title="Gastos da Janeth"
+                amount="50%"
+                lastTransaction="Última saída, dia 23 de Março"
+            />
+
 
         </HighlightCards>
 

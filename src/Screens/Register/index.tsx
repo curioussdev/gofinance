@@ -1,11 +1,13 @@
 import React from "react";
-import { Text } from "react-native";
+import { Input} from "../../components/Forms/Input";
+import { Button } from "../../components/Forms/Button"
 
 import { 
     Container, 
     Header,
-    Title
- } from "./styles";
+    Title,
+    Form
+} from "./styles";
 
 export function Resgister(){
     return(
@@ -14,6 +16,23 @@ export function Resgister(){
             <Header>
                 <Title>Cadastro</Title>
             </Header>
+
+            <Form >
+            <Input 
+                placeholder="Nome"
+            />
+
+            <Input 
+                placeholder="Preço"
+            />
+
+            </Form>
+
+            <Button title="Enviar"/>
+            
+
+            
+
         </Container>
     );
 }
