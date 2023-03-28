@@ -1,6 +1,7 @@
 import React from "react";
 import { Input } from "../../components/Forms/Input";
-import { Button } from "../../components/Forms/Button"
+import { Button } from "../../components/Forms/Button";
+import { TransactionTypeButton } from "../../components/Forms/TransactionTypeButton";
 
 import {
     Container,
@@ -26,6 +27,12 @@ export function Resgister() {
                     <Input
                         placeholder="Preço"
                     />
+
+                <TransactionTypeButton 
+                    type="up"
+                    title="Entrada"
+                />
+
                 </Fields>
                 <Button title="Enviar" />
 
